@@ -28,10 +28,10 @@
                 New candidate.
             </div>
             <div class="card-body">
-                <form>
+                <form action="<%=request.getContextPath()%>/candidate" method="post">
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" name="name">
                     </div>
                     <button type="submit" class="btn btn-primary">Save</button>
                 </form>

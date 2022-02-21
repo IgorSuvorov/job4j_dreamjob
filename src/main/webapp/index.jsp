@@ -28,13 +28,13 @@
                 <a class="nav-link" href="<%=request.getContextPath()%>/post/posts.jsp">Job postings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<%=request.getContextPath()%>/candidates.jsp">Candidates</a>
+                <a class="nav-link" href="<%=request.getContextPath()%>/candidate/candidates.jsp">Candidates</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<%=request.getContextPath()%>/post/editposting.jsp">Create new job posting</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<%=request.getContextPath()%>/editcandidate.jsp">Add new candidate</a>
+                <a class="nav-link" href="<%=request.getContextPath()%>/candidate/editcandidate.jsp">Add new candidate</a>
             </li>
         </ul>
     </div>
