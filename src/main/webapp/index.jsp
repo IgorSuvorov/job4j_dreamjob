@@ -1,7 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@ page import="java.util.*"%>
-<%@ page import="ru.job4j.dream.model.*" %>
 <%@ page import="ru.job4j.dream.store.Store" %>
+<%@ page import="ru.job4j.dream.model.Post" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,30 +21,16 @@
     <title>Dream job</title>
 </head>
 <body>
-<div class="container pt-3">
-
+<div class="container">
     <div class="row">
-        <div class="card" style="width: 100%">
-            <div class="card-header">
-                Job postings
-            </div>
-            <div class="card-body">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Postings</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <% for (Post post : Store.instOf().findAll()) { %>
-                    <tr>
-                        <td><%= post.getName() %></td>
-                    </tr>
-                    <% } %>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href="<%=request.getContextPath()%>/posts.jsp">Job postings</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<%=request.getContextPath()%>/candidates.jsp">Candidates</a>
+            </li>
+        </ul>
     </div>
 </div>
 </body>
