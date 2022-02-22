@@ -25,10 +25,10 @@
     <div class="row">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="<%=request.getContextPath()%>/post/posts.jsp">Job postings</a>
+                <a class="nav-link" href="<%=request.getContextPath()%>/post/posts.do">Job postings</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<%=request.getContextPath()%>/candidate/candidates.jsp">Candidates</a>
+                <a class="nav-link" href="<%=request.getContextPath()%>/candidate/candidates.do">Candidates</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<%=request.getContextPath()%>/post/editposting.jsp">Create new job posting</a>

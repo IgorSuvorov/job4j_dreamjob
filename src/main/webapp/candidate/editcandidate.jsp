@@ -28,7 +28,7 @@
                 New candidate.
             </div>
             <div class="card-body">
-                <form action="<%=request.getContextPath()%>/candidate" method="post">
+                <form action="<%=request.getContextPath()%>/candidate/candidates.jsp" method="post">
                     <div class="form-group">
                         <label>Name</label>
                         <input type="text" class="form-control" name="name">
