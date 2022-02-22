@@ -38,17 +38,13 @@
           </tr>
           </thead>
           <tbody>
-          <c:forEach var="can" items="${candidates}">
-            <tr class="row">
-              <td class="col-md-9">
-                <c:out value="${can.name}"/>
-                <a href='<c:url value="/candidates.do?edit=true&id=${can.id}"/>'>
+          <c:forEach items="${candidates}" var="candy">
+            <tr>
+              <td>
+                <a href='<c:url value="/candidates.do?edit=true&id=${candy.id}"/>'>
                   <i class="fa fa-edit mr-3"></i>
                 </a>
-                <br>
-                <p>
-                    ${can.memo}
-                </p>
+                <c:out value="${candy.name}"/>
               </td>
             </tr>
           </c:forEach>
