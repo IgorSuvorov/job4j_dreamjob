@@ -52,7 +52,7 @@
                     <c:forEach var="post" items="${posts}">
                         <tr>
                             <td>
-                                <a href='<c:url value="/posts.do?edit=true&id=${post.id}"/>'>
+                                <a href='<c:url value="/post/posts.do?edit=true&id=${post.id}"/>'>
                                     <i class="fa fa-edit mr-3"></i>
                                 </a>
                                 <c:out value="${post.name}"/>
