@@ -1,7 +1,5 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://thymeleaf.org">
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -17,7 +15,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
           integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-  <title>Работа мечты!</title>
+  <title>Работа мечты</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,23 +34,22 @@
 </nav>
 <div class="container">
   <div class="row">
-    <table class="table">
-      <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Имя></th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr th:each="post: ${posts}">
-        <td th:text="${post.id}" />
-        <td th:text="${post.name}" />
-      </tr>
-      </tbody>
-    </table>
+    <div class="card" style="width: 100%">
+      <div class="card-header">
+        Новая вакансия.
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-group">
+            <label>Имя
+              <input type="text" class="form-control">
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 </body>
 </html>
-</html>
-
