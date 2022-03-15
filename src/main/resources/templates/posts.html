@@ -46,15 +46,10 @@
       </tr>
       </thead>
       <tbody>
-<!--      <tr th:each="post: ${posts}">-->
-<!--        <td th:text="${post.id}" />-->
-<!--        <td th:text="${post.name}" />-->
-<!--      </tr>-->
         <tr th:each="post: ${posts}">
           <td th:text="${post.id}"></td>
           <td>
             <a th:href="@{|/formUpdatePost/${post.id}|}">
-<!--              <a th:href="@{|/updatePost/${post.id}|}">-->
               <i class="fa fa-edit"></i>
             </a>
             <span th:text="${post.name}"></span>

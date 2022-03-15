@@ -24,4 +24,13 @@ public class CandidateStore {
     public Collection<Candidate> findAll() {
         return candidates.values();
     }
+
+    public Candidate findById(int id) {
+        return candidates.get(id);
+    }
+
+    public void saveCandidate(Candidate candidate) {
+        candidates.put(candidate.getId(), candidate);
+    }
+
 }
