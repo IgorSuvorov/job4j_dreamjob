@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import ru.job4j.dream.model.Post;
 import ru.job4j.dream.service.PostService;
 
+import javax.annotation.concurrent.ThreadSafe;
+
+@ThreadSafe
 @Controller
 public class PostController {
 

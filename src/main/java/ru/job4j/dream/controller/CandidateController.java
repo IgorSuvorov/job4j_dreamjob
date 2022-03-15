@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import ru.job4j.dream.model.Candidate;
 import ru.job4j.dream.service.CandidateService;
 
+import javax.annotation.concurrent.ThreadSafe;
+
+@ThreadSafe
 @Controller
 public class CandidateController {
     private final CandidateService candidateService;

@@ -3,10 +3,12 @@ package ru.job4j.dream.store;
 import org.springframework.stereotype.Repository;
 import ru.job4j.dream.model.Post;
 
+import javax.annotation.concurrent.ThreadSafe;
 import java.util.Collection;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+@ThreadSafe
 @Repository
 public class PostStore {
 

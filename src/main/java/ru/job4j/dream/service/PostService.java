@@ -4,8 +4,10 @@ import org.springframework.stereotype.Service;
 import ru.job4j.dream.model.Post;
 import ru.job4j.dream.store.PostStore;
 
+import javax.annotation.concurrent.ThreadSafe;
 import java.util.Collection;
 
+@ThreadSafe
 @Service
 public class PostService {
 

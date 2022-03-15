@@ -4,9 +4,10 @@ import org.springframework.stereotype.Service;
 import ru.job4j.dream.model.Candidate;
 import ru.job4j.dream.store.CandidateStore;
 
+import javax.annotation.concurrent.ThreadSafe;
 import java.util.Collection;
 
-
+@ThreadSafe
 @Service
 public class CandidateService {
 
