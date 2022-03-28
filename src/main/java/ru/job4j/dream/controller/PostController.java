@@ -27,12 +27,6 @@ public class PostController {
         return "posts";
     }
 
-    @GetMapping("/addPost")
-    public String addPost(Model model) {
-        model.addAttribute("posts", new Post(0, "Заполните поле"));
-        return "addPost";
-    }
-
     @GetMapping("/formUpdatePost/{postId}")
     public String formUpdatePost(Model model, @PathVariable("postId") int id) {
         model.addAttribute("post", postService.findById(id));

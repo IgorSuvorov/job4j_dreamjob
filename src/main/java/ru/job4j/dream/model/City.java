@@ -8,7 +8,7 @@ import lombok.*;
 @Setter
 @EqualsAndHashCode
 @ToString
-public class Candidate {
+public class City {
     private int id;
     private String name;
 }
