@@ -4,13 +4,8 @@ import lombok.*;
 
 import java.io.Serializable;
 
-@NoArgsConstructor
+@Data
 @RequiredArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
 public class Post implements Serializable {
     @NonNull
     private int id;
@@ -18,4 +13,3 @@ public class Post implements Serializable {
     private String name;
     private City city;
 }
-

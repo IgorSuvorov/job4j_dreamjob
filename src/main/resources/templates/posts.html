@@ -46,6 +46,7 @@
       </tr>
       </thead>
       <tbody>
+      <!-- по поводу того откуда взялся posts: в PostController мы в model добавляем attribute с этим самым названием -->
         <tr th:each="post: ${posts}">
           <td th:text="${post.id}"></td>
           <td>
@@ -53,12 +54,6 @@
               <i class="fa fa-edit"></i>
             </a>
             <span th:text="${post.name}"></span>
-            <span th:if="${post.visible}">
-            <i class="fa fa-check-square-o"></i>
-        </span>
-            <span th:if="${!post.visible}">
-            <i class="fa fa-square-o"></i>
-        </span>
           </td>
         </tr>
       </tbody>

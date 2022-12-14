@@ -2,12 +2,8 @@ package ru.job4j.dream.model;
 
 import lombok.*;
 
-@NoArgsConstructor
+@Data
 @AllArgsConstructor
-@Getter
-@Setter
-@EqualsAndHashCode
-@ToString
 public class City {
     private int id;
     private String name;
